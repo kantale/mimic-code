@@ -22,7 +22,7 @@
 -- endday: if day of discharge then outtime, else midnight at end of day
 -- ----------
 
-DROP MATERIALIZED VIEW icustay_days;
+DROP MATERIALIZED VIEW IF EXISTS icustay_days CASCADE;
 CREATE MATERIALIZED VIEW icustay_days AS
 WITH dayseq AS (
 	SELECT icustay_id, intime, outtime,
