@@ -8,8 +8,8 @@ with drugmv as
 (
   select
       icustay_id, orderid
-    , rate as vaso_rate
-    , amount as vaso_amount
+    , rate as drug_rate
+    , amount as drug_amount
     , starttime
     , endtime
   from inputevents_mv
